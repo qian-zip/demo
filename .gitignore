@@ -1,26 +1,64 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
 # Dependencies
 node_modules/
 vendor/
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
 
 # Environment
 .env
 .env.local
 .env.*.local
 
+# AI / API Keys
+*.apikey
+*.pem
+credentials.json
+service-account.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# AI Model & Data
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+*.pth
+*.ckpt
+*.h5
+*.pb
+checkpoints/
+models/*/
+!models/.gitkeep
+
+# Datasets
+*.csv
+*.parquet
+data/raw/
+data/external/
+!data/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
 # Build output
 dist/
 build/
-out/
+target/
 
 # Logs
 *.log
